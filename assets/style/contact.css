@@ -1,0 +1,357 @@
+@import url('../style/master.css'); 
+
+
+ header{
+    background: url("../images/contact_images/background.png");
+    background-position: top;
+    background-size: cover;
+    margin-block: unset;
+
+ }
+.contact-main{
+    background: url("../images/contact_images/background.png");
+    background-position: center;
+    background-size: cover;
+    margin-block: unset;
+
+}
+
+.contact-main >h1{
+    font-size: var(--h1-font-size);
+    font-weight: var(--fw-boldest);
+    color: var(--lightest);
+    line-height: 80px;
+    letter-spacing: -1px;
+    text-align: left;
+    margin-block-end: 3rem;
+    
+}
+
+
+
+
+.contact-main-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.contact-main-wrapper form{
+    display: grid;
+    grid-template-areas: "item"
+                         "item"
+                         "item"
+                         "item"
+                          "item"
+                        "item"
+                        "item";
+   gap: 1rem;
+
+}
+
+.contact-main-wrapper form .message-container{
+    grid-row: span 2;
+}
+
+form > span{
+    display: grid;
+    
+    gap: .8rem;
+}
+
+form span > label{
+    text-transform: uppercase;
+    color: var(--lightest);
+    font-size: var(--big-text-size);
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.8999999761581421px;
+    text-align: left;
+    
+}
+
+form span > input{
+    border-style: solid;
+    padding: 20.5px 24.995315551757812px;
+    border-radius: 100px;
+    border: 1px solid var(--main-background);
+    background: var(--darkest-color);
+    font-size: var(--big-text-size);
+    font-weight: var(--fw-light);
+    color: var(--lightest);
+
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+
+
+
+form span >input::placeholder,
+form span >textarea::placeholder{
+     font-size: var(--big-text-size);
+    font-weight: var(--fw-light);
+    color: var(--lightest);
+
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+
+form span > textarea{
+     padding: 20.5px 24.995315551757812px;
+    border-radius: 14px;
+    border: 1px solid var(--main-background);
+    background: var(--darkest-color);
+    resize: none;
+    font-size: var(--big-text-size);
+    font-weight: var(--fw-light);
+    color: var(--lightest);
+
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+form button{
+    border-style: solid;
+    border: 1px solid var(--main-background);
+    padding: 27px 32px;
+    border-radius: 80px;
+    background: var(--dark-color);
+    color: var(--lightest);
+    text-transform: uppercase;
+    font-size: var(--normal-text-size);
+    font-weight: var(--fw-boldest);
+    line-height: 16px;
+    letter-spacing: 1.600000023841858px;
+    text-align: center;
+  
+    
+}
+
+.contact-main-wrapper .contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-info > p:first-child{
+    font-size: var(--h2-font-size);
+    font-weight: var(--fw-boldest);
+    color: var(--lightest);
+    line-height: 36px;
+    letter-spacing: 0px;
+    text-align: left;
+    
+}
+
+
+.contact-info > p:nth-child(2){
+    font-size: var(--normal-text-size);
+    color: var(--lightest);
+    font-weight: var(--fw-light);
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+
+.contact-info > span{
+    display: flex;
+    gap: .98rem;
+    align-items: center;
+}
+
+.contact-info > span picture img{
+                padding: .8rem .7rem;
+                background: var(--dark-color);
+                border-radius: 50%;
+}
+.contact-info > span p{
+    font-size: var(--big-text-size);
+    font-weight: var(--fw-normal);
+    color: var(--lightest);
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+
+
+.faqs-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    
+}
+
+.faqs-wrapper > h1{
+
+     font-size: var(--h1-font-size);
+    font-weight: var(--fw-boldest);
+    color: var(--lightest);
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: -1px;
+   text-align: center;
+    
+}
+
+
+
+.faqs-wrapper .accordion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+       
+      
+    
+    }
+    
+    .accordion .faq-holder{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        overflow: hidden;
+        border-bottom: 1px solid var(--hover-background);
+        padding: 32px 8px;
+           
+    }
+    
+    
+    .faq-holder .faq{
+        display: flex;
+        justify-content: space-between;
+      
+        cursor: pointer;
+        align-items: center;
+        
+         
+    
+    
+    }
+    
+    
+    .faq-holder .faq h2{
+         font-size: var(--h2-font-size);
+        font-weight: var(--fw-boldest);
+        color: var(--lightest);
+        line-height: 30px;
+        letter-spacing: 0.2800000011920929px;
+        text-align: left;
+        
+    }
+    
+    .accordion-btn{
+        transition: all .5s;
+        color: var(--lightest);
+        font-weight: var(--fw-normal);
+        font-size: var(--h2-font-size);
+        transition: all 0.5s;
+        
+    }
+    
+     .answer{
+         background: var(--body-color);
+        border-radius: .5rem;
+        padding-inline: .9rem;
+        padding-block: 0;
+        height: 0;
+        transition: all .5s;
+        cursor: pointer;
+        visibility: hidden;
+        overflow: hidden;
+      }
+    
+    
+    
+    .answer p{
+        font-size: var(--big-text-size);
+        font-weight: var(--fw-normal);
+        color: var(--lightest);
+        line-height: 32px;
+        letter-spacing: 0em;
+        text-align: left;
+        
+                                        
+       
+    }
+    
+    
+    .show-answer{
+       padding-block:2.8rem;
+        height:unset;
+        visibility: visible;
+        overflow: visible;
+    }
+    
+
+
+
+    
+
+    /*====================================================MEDIA QUERIES==========================================*/
+
+                    /* I am grouping my media queries into small chunks 
+                    so that they would be easier to read cos this page is kinda long*/
+
+
+                    @media screen and (min-width:767px){
+
+
+
+
+
+    
+                        .contact-main-wrapper form{
+                            display: grid;
+                            grid-template-areas: "item item"
+                                                 "item item"
+                                                 "item  item"
+                                                 "item item"
+                                                 "item item";
+                        } 
+                            
+                        .contact-main-wrapper form .message-container{
+                            grid-column: span 2;
+                        }
+                        
+                        form button{
+                            width: fit-content;
+                        }
+                            
+                        }
+
+
+                        @media screen and (min-width:767px){
+
+                            .faqs-wrapper .accordion{
+                                width: 80%;
+                                margin: 0 auto;
+                            }
+                            
+                        }
+
+                        
+                        @media screen and (min-width:1024px){
+                        
+                            .contact-main-wrapper{
+                                flex-direction: row;
+                            }
+                        
+                            form{
+                                flex-basis: 60%;
+                            }
+                        
+                            .contact-info{
+                                flex-basis: 40%;
+                            }
+                            
+                        }

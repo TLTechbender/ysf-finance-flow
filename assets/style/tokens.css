@@ -1,0 +1,285 @@
+@import url('../style/master.css'); 
+
+
+.tokens-section .tokens-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.tokens-wrapper .tokens-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tokens-heading > h1{
+    text-align: left;
+    text-transform: capitalize;
+    color: var(--lightest);
+     font-size: var(--h1-font-size);
+    font-weight: var(--fw-boldest);
+    line-height: 80px;
+    letter-spacing: -1px;
+    text-align: center;
+    
+
+}
+
+.tokens-heading p{
+    text-align: left;
+    color: var(--lightest);
+    font-size: var(--big-text-size);
+    font-weight: var(--fw-lightest);
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+    
+}
+
+.tokens-table .table-desktop{
+  display: none;
+}
+
+/* I am absolutely not a fan o, styling html tables
+   I used way too many complicated css selectors
+   Fun Fact: this is the least responsive of the bunch */
+
+
+table{
+    margin-block: 4rem;
+}
+
+
+th, td{
+    color: var(--lightest);
+    text-align: left;
+}
+
+.mobile-table table{
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.mobile-table table thead tr th{
+    text-transform: uppercase;
+    font-size: var(--normal-text-size);
+    font-weight: var(--fw-boldest);
+    line-height: 18px;
+    letter-spacing: 0.9599999785423279px;
+    text-align: left;
+    
+}
+
+.mobile-table tbody{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.mobile-table tbody tr{
+    padding-block-end: 1.4rem;
+    border-bottom: 1px solid var(--hover-background2);
+}
+.mobile-table tbody tr:first-child td{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.mobile-table tbody tr:first-child td p:first-child{
+    font-size: var(--big-text-size);
+    font-weight: var(--fw-boldest);
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+
+
+.mobile-table tbody tr:first-child td p:last-child{
+    background: var(--darkest-color);
+    padding:7px 8px;
+    border-radius: 40px;
+    font-family: DM Sans;
+    font-size: var(--smaller-text-size);
+    font-weight:var(--fw-normal);
+    line-height: 12px;
+    letter-spacing: 0.6000000238418579px;
+    text-align: left;
+    
+    
+
+}
+
+
+.mobile-table tbody tr:not(:first-child){
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+
+.mobile-table tbody tr th{
+
+font-size: var(--normal-text-size);
+font-weight:var(--fw-boldest);
+text-transform: uppercase;
+line-height: 18px;
+letter-spacing: 0.02em;
+text-align: left;
+}
+
+.mobile-table tbody tr td{
+     font-size: var(--normal-text-size);
+    font-weight: var(--fw-boldest);
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+
+}
+
+.mobile-table tbody tr:nth-child(2) td{
+     font-weight: var(--fw-light);
+      
+}
+
+
+.mobile-table tbody tr td a{
+    color: var(--lightest);
+    font-weight: var(--fw-light);
+    text-decoration: underline;
+}
+
+
+
+.mobile-table tbody tr td a:is(:hover,:focus-within){
+    color: var(--dark-color);
+}
+
+
+
+/* 
+I just learned something kinda crazy, If there is little 
+content on a page and if the screen size is just large enough
+the footer gets pushed up */
+
+
+
+
+
+    /*====================================================MEDIA QUERIES==========================================*/
+
+                    /* I am grouping my media queries into small chunks 
+                    so that they would be easier to read cos this page is kinda long*/
+
+
+
+
+@media screen and (min-width:800px){
+  
+.tokens-heading h1, .tokens-heading p{
+    text-align: center;
+}
+th, td{
+    color: var(--lightest);
+    cursor: pointer;
+}
+.tokens-table table.desktop-table{
+    width: 100%;
+    
+    
+}
+
+.tokens-table .table-desktop{
+    display: unset;
+  }
+
+  .tokens-table .mobile-table{
+    display: none;
+  }
+
+  
+
+  .desktop-table thead tr th{
+    height: 5rem;
+    border-bottom: 1px solid var(--hover-background2) ;
+    font-size: var(--normal-text-size);
+    font-weight: var(--fw-boldest);
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-align: left;
+    text-transform: uppercase;
+    
+   }
+
+.desktop-table-body tr td {
+    height: 5rem;
+    border-bottom: 1px solid var(--hover-background2) ;
+}
+.desktop-table tbody tr td:first-child{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    gap: 1rem;
+    margin-block: auto;
+}
+
+
+.desktop-table tbody tr td{
+    font-size: var(--normal-text-size);
+   font-weight: var(--fw-boldest);
+   line-height: 26px;
+   letter-spacing: 0em;
+   text-align: left;
+   
+
+}
+
+.desktop-table tbody tr td:nth-child(2){
+    font-weight: var(--fw-light);
+     
+}
+
+
+.desktop-table tbody tr td:first-child p:nth-child(2){
+    font-size: var(--big-text-size);
+    font-weight: var(--fw-boldest);
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.desktop-table tbody tr td:first-child p:last-child{
+    background: var(--darkest-color);
+    padding:7px 8px;
+    border-radius: 40px;
+    font-family: DM Sans;
+    font-size: var(--smaller-text-size);
+    font-weight:var(--fw-normal);
+    line-height: 12px;
+    letter-spacing: 0.6000000238418579px;
+    text-align: left;
+}
+
+
+.desktop-table tbody tr td a{
+    color: var(--lightest);
+    font-weight: var(--fw-light);
+    text-decoration: underline;
+}
+
+.desktop-table tbody tr td a:is(:hover,:focus-within){
+    color: var(--dark-color);
+}
+
+
+}
+
