@@ -41,8 +41,16 @@
         </div>
         <div class="menu-wrapper">
           <ul class="menu">
+
+            <script type="text/javasript">
+                function loadAbout(){
+                    e.preventDefault();
+                    window.history.pushState({}, "", "./html/about.html")
+                }
+                
+            </script>
             <li><a class="nav-link" href="#">home</a></li>
-            <li><a class="nav-link" href="./html/about.html">about</a></li>
+            <li><a class="nav-link" onclick="loadAbout()" href="./html/about.html">about</a></li>
             <li><a class="nav-link" href="./html/pricing.html">pricing</a></li>
             <li><a class="nav-link" href="./html/tokens.html">tokens</a></li>
             <li><a class="nav-link" href="./html/blog.html">blog</a></li>
